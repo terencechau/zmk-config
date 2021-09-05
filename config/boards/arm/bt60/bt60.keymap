@@ -63,15 +63,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_activate_settings_layer {
+        combo_test {
             timeout-ms = <50>;
-            key-positions = <41 46 52>;
-            bindings = <&to SETTINGS>;
-        };
-        combo_activate_blank_layer {
-            timeout-ms = <50>;
-            key-positions = <37 41 52>;
-            bindings = <&to BLANK>;
+            key-positions = <15 16>;
+            bindings = <&kp GRAVE>;
         };
     };
 };
