@@ -3,18 +3,52 @@
 #include <dt-bindings/zmk/bt.h>
 #define DEFAULT 0
 #define ALTERNATE 1
-#define SETTINGS 2
-#define BLANK 3
+#define BLANK 2
 
 / {
     combos {
         compatible = "zmk,combos";
-        combo_settings {
+        combo_bt_clear {
             timeout-ms = <100>;
-            key-positions = <42 47 53>;
-            bindings = <&tog SETTINGS>;
+            key-positions = <0 42 47>;
+            bindings = <&bt BT_CLR>;
         };
-	combo_blank {
+        combo_bt_0 {
+            timeout-ms = <100>;
+            key-positions = <1 42 47>;
+            bindings = <&bt BT_SEL 0>;
+        };
+        combo_bt_1 {
+            timeout-ms = <100>;
+            key-positions = <2 42 47>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        combo_bt_2 {
+            timeout-ms = <100>;
+            key-positions = <3 42 47>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        combo_bt_3 {
+            timeout-ms = <100>;
+            key-positions = <4 42 47>;
+            bindings = <&bt BT_SEL 3>;
+        };
+        combo_bt_4 {
+            timeout-ms = <100>;
+            key-positions = <5 42 47>;
+            bindings = <&bt BT_SEL 4>;
+        };
+        combo_bootloader {
+            timeout-ms = <100>;
+            key-positions = <41 42 47>;
+            bindings = <&bootloader>;
+        };
+        combo_reset {
+            timeout-ms = <100>;
+            key-positions = <28 42 47>;
+            bindings = <&reset>;
+        };
+		combo_blank {
             timeout-ms = <100>;
             key-positions = <38 42 53>;
             bindings = <&tog BLANK>;
@@ -50,16 +84,6 @@
 				&trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT &kp HOME &kp PG_UP &bootloader
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &kp END &kp PG_DN &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans
-			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-		};
-		keyboard_settings {
-			bindings = <
-				&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_NXT &bt BT_PRV &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none &none &none &none &reset
-				&none &none &none &none &none &none &none &none &none &none &none &none &bootloader
-				&none &none &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
