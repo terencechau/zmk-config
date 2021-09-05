@@ -17,7 +17,7 @@
 	combo_blank {
             timeout-ms = <100>;
             key-positions = <38 42 53>;
-            bindings = <&tog SETTINGS>;
+            bindings = <&tog BLANK>;
         };
     };
 };
@@ -55,7 +55,7 @@
 		};
 		keyboard_settings {
 			bindings = <
-				&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5 &none &none &none &none &none &none &none &none
+				&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none &none &none
 				&none &none &none &none &none &none &none &none &none &none &none &none &none &reset
 				&none &none &none &none &none &none &none &none &none &none &none &none &bootloader
 				&none &none &none &none &none &none &none &none &none &none &none &none
