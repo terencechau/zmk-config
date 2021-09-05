@@ -10,42 +10,37 @@
         compatible = "zmk,combos";
         combo_bt_clear {
             timeout-ms = <100>;
-            key-positions = <0 42 47>;
+            key-positions = <0 29 47>;
             bindings = <&bt BT_CLR>;
         };
         combo_bt_0 {
             timeout-ms = <100>;
-            key-positions = <1 42 47>;
+            key-positions = <1 29 47>;
             bindings = <&bt BT_SEL 0>;
         };
         combo_bt_1 {
             timeout-ms = <100>;
-            key-positions = <2 42 47>;
+            key-positions = <2 29 47>;
             bindings = <&bt BT_SEL 1>;
         };
         combo_bt_2 {
             timeout-ms = <100>;
-            key-positions = <3 42 47>;
+            key-positions = <3 29 47>;
             bindings = <&bt BT_SEL 2>;
         };
-        combo_bt_3 {
+        combo_bt_nxt {
             timeout-ms = <100>;
-            key-positions = <4 42 47>;
-            bindings = <&bt BT_SEL 3>;
-        };
-        combo_bt_4 {
-            timeout-ms = <100>;
-            key-positions = <5 42 47>;
-            bindings = <&bt BT_SEL 4>;
+            key-positions = <4 29 47>;
+            bindings = <&bt BT_NXT>;
         };
         combo_bootloader {
             timeout-ms = <100>;
-            key-positions = <41 42 47>;
+            key-positions = <41 54 61>;
             bindings = <&bootloader>;
         };
         combo_reset {
             timeout-ms = <100>;
-            key-positions = <28 42 47>;
+            key-positions = <28 54 61>;
             bindings = <&reset>;
         };
 		combo_blank {
