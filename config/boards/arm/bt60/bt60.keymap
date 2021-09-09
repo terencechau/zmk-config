@@ -4,6 +4,9 @@
 #define DEFAULT 0
 #define ALTERNATE 1
 #define BLANK 2
+&kscan0 {
+    debounce-period = <15>;
+};
 
 / {
     combos {
